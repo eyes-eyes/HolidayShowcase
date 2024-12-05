@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    line-height: inherit;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: rgb(248, 249, 250);
+}
+
+html {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    /* font-size: 16px; */
+}
+
+.flex {
+    display: flex;
+}
+
+/* section.start {
+} */
+
+div.mainArea {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+div.worldMap {
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    background-color: #382f32;
+    /*alternate color: #FFFCDB*/
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+img.worldMapImage {
+    width: 100%;
+}
