@@ -38,7 +38,7 @@ div.mainArea {
 
 div.worldMap {
     width: 90%;
-    height: 90%;
+    /* height: 90%; */
     justify-content: center;
     align-items: center;
     background-color: #382f32;
@@ -48,5 +48,20 @@ div.worldMap {
 }
 
 img.worldMapImage {
+    height: 100%;
     width: 100%;
+    z-index: 0;
+}
+
+/* div.imageArea {
+    position: relative;
+} */
+
+img.pin1 {
+    width: 1.25rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: calc(50%);
+    top: calc(anchor(30%));
+    z-index: 1;
 }
