@@ -10,8 +10,6 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
     align-items: center;
     justify-content: center;
     background: rgb(248, 249, 250);
@@ -29,16 +27,17 @@ html {
 /* section.start {
 } */
 
-div.mainArea {
+.mainArea {
     width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
-div.worldMap {
-    width: 90%;
-    /* height: 90%; */
+.worldMap {
+    position: relative;
+    width: 90vw;
+    height: fit-content;
     justify-content: center;
     align-items: center;
     background-color: #382f32;
@@ -53,15 +52,164 @@ img.worldMapImage {
     z-index: 0;
 }
 
-/* div.imageArea {
+div.imageArea {
     position: relative;
-} */
+    top: 0;
+    left: 0;
+}
 
 img.pin1 {
-    width: 1.25rem;
+    width: 1.25vw;
     position: absolute;
     transform: translate(-50%, -50%);
-    left: calc(50%);
-    top: calc(anchor(30%));
+    left: 53.5%;
+    top: 21%;
     z-index: 1;
+}
+
+img.pin2 {
+    width: 1.25vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 25%;
+    top: 24%;
+    z-index: 1;
+}
+
+img.pin3 {
+    width: 1.25vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 26%;
+    top: 31%;
+    z-index: 1;
+}
+
+img.pin4 {
+    width: 1.25vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 25%;
+    top: 37%;
+    z-index: 1;
+}
+
+img.pin5 {
+    width: 1.25vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 69.5%;
+    top: 40%;
+    z-index: 1;
+}
+
+img.pin6 {
+    width: 1.25vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 55.7%;
+    top: 61.5%;
+    z-index: 1;
+}
+
+img.pin7 {
+    width: 1.25vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 74%;
+    top: 35%;
+    z-index: 1;
+}
+
+img.pin8 {
+    width: 1.25vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 83%;
+    top: 33%;
+    z-index: 1;
+}
+
+img.pin9 {
+    width: 1.25vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 49%;
+    top: 26%;
+    z-index: 1;
+}
+
+img.pin10 {
+    width: 1.25vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 83%;
+    top: 60%;
+    z-index: 1;
+}
+
+img.pin11 {
+    width: 1.25vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 37%;
+    top: 54%;
+    z-index: 1;
+}
+img.pin12 {
+    width: 1.25vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 71%;
+    top: 23%;
+    z-index: 1;
+}
+img.pin13 {
+    width: 1.25vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 59%;
+    top: 45%;
+    z-index: 1;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 85%;
+    background: #fffcdb;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+    overflow: auto; /* Ensure scrolling if content overflows */
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-content {
+    position: relative;
+    flex: 1; /* Take up all available space */
+    padding: 20px;
+    text-align: center;
+    overflow: auto;
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.popup .close-btn:hover {
+    color: #ff0000;
 }
