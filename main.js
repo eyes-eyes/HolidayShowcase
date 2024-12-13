@@ -9,6 +9,7 @@ function setupPins() {
             // Get unique content from data attributes
             const title = pin.getAttribute("data-title");
             const description = pin.getAttribute("data-description");
+            const image = pin.getAttribute("data-image");
 
             // Create popup element
             const popup = document.createElement("div");
@@ -17,7 +18,12 @@ function setupPins() {
                 <div class="popup-content">
                     <button class="close-btn">&times;</button>
                     <h2>${title}</h2>
-                    <p>${description}</p>
+                    <div class="popup_page">
+                        <img class="popup_image" src="${image}" alt="" />
+                        <div class="popup_text">
+                            <p>${description}</p>
+                        </div>
+                    </div>
                 </div>
             `;
 
