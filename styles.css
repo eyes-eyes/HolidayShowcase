@@ -65,6 +65,8 @@ img.pin1 {
     left: 53.5%;
     top: 21%;
     z-index: 1;
+    cursor: pointer;
+    opacity: 1;
 }
 
 img.pin2 {
@@ -74,6 +76,8 @@ img.pin2 {
     left: 25%;
     top: 24%;
     z-index: 1;
+    cursor: pointer;
+    opacity: 1;
 }
 
 img.pin3 {
@@ -83,6 +87,8 @@ img.pin3 {
     left: 26%;
     top: 31%;
     z-index: 1;
+    cursor: pointer;
+    opacity: 1;
 }
 
 img.pin4 {
@@ -92,6 +98,8 @@ img.pin4 {
     left: 25%;
     top: 37%;
     z-index: 1;
+    cursor: pointer;
+    opacity: 1;
 }
 
 img.pin5 {
@@ -101,6 +109,8 @@ img.pin5 {
     left: 69.5%;
     top: 40%;
     z-index: 1;
+    cursor: pointer;
+    opacity: 1;
 }
 
 img.pin6 {
@@ -110,6 +120,8 @@ img.pin6 {
     left: 55.7%;
     top: 61.5%;
     z-index: 1;
+    cursor: pointer;
+    opacity: 1;
 }
 
 img.pin7 {
@@ -119,6 +131,8 @@ img.pin7 {
     left: 74%;
     top: 35%;
     z-index: 1;
+    cursor: pointer;
+    opacity: 1;
 }
 
 img.pin8 {
@@ -128,6 +142,8 @@ img.pin8 {
     left: 83%;
     top: 33%;
     z-index: 1;
+    cursor: pointer;
+    opacity: 1;
 }
 
 img.pin9 {
@@ -137,6 +153,8 @@ img.pin9 {
     left: 49%;
     top: 26%;
     z-index: 1;
+    cursor: pointer;
+    opacity: 1;
 }
 
 img.pin10 {
@@ -146,6 +164,8 @@ img.pin10 {
     left: 83%;
     top: 60%;
     z-index: 1;
+    cursor: pointer;
+    opacity: 1;
 }
 
 img.pin11 {
@@ -155,6 +175,8 @@ img.pin11 {
     left: 37%;
     top: 54%;
     z-index: 1;
+    cursor: pointer;
+    opacity: 1;
 }
 img.pin12 {
     width: 1.25vw;
@@ -163,6 +185,8 @@ img.pin12 {
     left: 71%;
     top: 23%;
     z-index: 1;
+    cursor: pointer;
+    opacity: 1;
 }
 img.pin13 {
     width: 1.25vw;
@@ -171,6 +195,9 @@ img.pin13 {
     left: 59%;
     top: 45%;
     z-index: 1;
+    cursor: pointer;
+    opacity: 1;
+    opacity: 1;
 }
 
 .popup {
@@ -230,4 +257,24 @@ img.popup_image {
 
 div.popup_text {
     width: 50%;
+}
+
+.pin1:hover,
+.pin2:hover,
+.pin3:hover,
+.pin4:hover,
+.pin5:hover,
+.pin6:hover,
+.pin7:hover,
+.pin8:hover,
+.pin9:hover,
+.pin10:hover,
+.pin11:hover,
+.pin12:hover,
+.pin13:hover {
+    background-color: white;
+    opacity: 0.4 !important;
+    filter: alpha(opacity=70) !important; /* For IE8 and earlier */
+    box-shadow: 0 0 0px #000000 !important;
+    border-radius: 10rem;
 }
